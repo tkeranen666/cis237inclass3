@@ -24,11 +24,6 @@ namespace cis237inclass3
             get { return lastName; }
             set { lastName = value; }
         }
-        public decimal WeeklySalary
-        {
-            get { return weeklySalary; }
-            set { weeklySalary = value; }
-        }
 
         //One Method that is public. Can be accessed from other classes
         public string GetFullName()
@@ -40,24 +35,15 @@ namespace cis237inclass3
         //It overrides the default ToString that every object gets for free!
         public override string ToString()
         {
-            return this.firstName + " " + this.lastName + " " + this.weeklySalary.ToString("C");
-        }
-
-        //One method that is private. Can only be called from inside this class
-        private string foo()
-        {
-            return "FOO";
+            return this.firstName + " " + this.lastName;
         }
 
         //3 Parameter constructor
-        public Employee(string firstName, string lastName, decimal weeklySalary)
+        public Employee(string firstName, string lastName)
         {
             //Assign the passed in values to the fields
             this.firstName = firstName;
             this.lastName = lastName;
-
-            //Assign the passed in value by the property
-            this.WeeklySalary = weeklySalary;
         }
 
         //Default constructor
