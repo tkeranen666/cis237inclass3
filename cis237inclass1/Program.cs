@@ -11,8 +11,14 @@ namespace cis237inclass3
         static void Main(string[] args)
         {
             //Create a couple of instances of the Employee class
-            Employee employee1 = new Employee("Dave", "Barnes", 537.00m);
-            Employee employee2 = new Employee("Joe", "Somebody", 125.50m);
+            Employee employee1 = new Employee("Dave", "Barnes");
+            Employee employee2 = new Employee("Joe", "Somebody");
+
+            // Make a new SalaryEmployee
+            SalaryEmployee salaryEmployee1 = new SalaryEmployee("Tim", "Keranen", 55000m);
+            HourlyEmployee hourlyEmployee1 = new HourlyEmployee("John", "Criton", 12.13m);
+
+            //salaryEmployee1.
 
             //Creat simple int that will be used for value vs reference
             int myNumber = 5;
@@ -61,6 +67,13 @@ namespace cis237inclass3
                     Console.WriteLine(employee.ToString());
                 }
             }
+
+            // Printout the new subClass of Employee
+            Console.WriteLine();
+            Console.WriteLine(salaryEmployee1.ToString());
+            Console.WriteLine();
+            Console.WriteLine(hourlyEmployee1.ToString());
+            Console.WriteLine();
 
             //We are creating a new UserInterface class, and it's okay
             //that the UserInterface class does not have a defined

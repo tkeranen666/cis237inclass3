@@ -9,9 +9,8 @@ namespace cis237inclass3
     class Employee
     {
         //Backing fields
-        private string firstName;
-        private string lastName;
-        private decimal weeklySalary;
+        protected string firstName;
+        protected string lastName;
 
         //properties for the backing fields
         public string FirstName
