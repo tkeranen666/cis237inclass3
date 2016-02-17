@@ -14,32 +14,32 @@ namespace cis237inclass3
             Employee employee1 = new Employee("Dave", "Barnes");
             Employee employee2 = new Employee("Joe", "Somebody");
 
-            // Make a new SalaryEmployee
-            SalaryEmployee salaryEmployee1 = new SalaryEmployee("Tim", "Keranen", 55000m);
-            HourlyEmployee hourlyEmployee1 = new HourlyEmployee("John", "Criton", 12.13m);
+            /*   // Make a new SalaryEmployee
+             //  SalaryEmployee salaryEmployee1 = new SalaryEmployee("Tim", "Keranen", 55000m);
+             //  HourlyEmployee hourlyEmployee1 = new HourlyEmployee("John", "Criton", 12.13m);
 
-            //salaryEmployee1.
+               //salaryEmployee1.
 
-            //Creat simple int that will be used for value vs reference
-            int myNumber = 5;
+               //Creat simple int that will be used for value vs reference
+               int myNumber = 5;
 
-            //Write the value of the int before the method, call the method, print after call.
-            Console.WriteLine(myNumber);
-            changeAnInt(myNumber);
-            Console.WriteLine(myNumber);
+               //Write the value of the int before the method, call the method, print after call.
+               Console.WriteLine(myNumber);
+               changeAnInt(myNumber);
+               Console.WriteLine(myNumber);
 
-            //Write the value of the employee before the method, call the method, print after call.
-            Console.WriteLine(employee1.ToString());
-            changeAnObject(employee1);
-            Console.WriteLine(employee1.ToString());
+               //Write the value of the employee before the method, call the method, print after call.
+               Console.WriteLine(employee1.ToString());
+               changeAnObject(employee1);
+               Console.WriteLine(employee1.ToString());
             
-            //Console.WriteLine(employee.GetFullName());
-            //Console.WriteLine(employee.ToString());
+               //Console.WriteLine(employee.GetFullName());
+               //Console.WriteLine(employee.ToString());//// */
 
             //Showing how to use an array with objects
-            Employee[] employees = new Employee[10];
+               Employee[] employees = new Employee[10];
 
-            
+
             //Instanciate some employees into the array
             //employees[0] = new Employee("James", "Kirk");
             //employees[1] = new Employee("Jean-Luc", "Picard");
@@ -85,11 +85,11 @@ namespace cis237inclass3
             }
 
             // Printout the new subClass of Employee
-            Console.WriteLine();
+           /* Console.WriteLine();
             Console.WriteLine(salaryEmployee1.ToString());
             Console.WriteLine();
             Console.WriteLine(hourlyEmployee1.ToString());
-            Console.WriteLine();
+            Console.WriteLine();// */
 
             //We are creating a new UserInterface class, and it's okay
             //that the UserInterface class does not have a defined
@@ -152,7 +152,7 @@ namespace cis237inclass3
 
         //This method takes in a integer, which is passed by value
         //and then changes the value of it.
-        static void changeAnInt(int myNumber)
+       /* static void changeAnInt(int myNumber)
         {
             myNumber = 456;
         }
@@ -162,7 +162,7 @@ namespace cis237inclass3
         static void changeAnObject(Employee employee)
         {
             employee.FirstName = "Thor";
-        }
+        }// */
 
 
 
