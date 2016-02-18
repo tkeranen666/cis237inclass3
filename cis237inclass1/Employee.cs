@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace cis237inclass3
 {
-    class Employee
+    // this is an abstract class. It is made abstract by adding the 'abstract' keyword before the word class
+    abstract class Employee : IEmployee
     {
         //Backing fields
         protected string firstName;
@@ -35,6 +36,21 @@ namespace cis237inclass3
         public override string ToString()
         {
             return this.firstName + " " + this.lastName;
+        }
+
+        // Abstract class must have no method body. Hence the ; at the end.
+        // No method body, must be implemented/overridden by children classes
+        // We made this method abstract because based on information that this class has, we have no idea how to calculate a salary, let alone format one.
+        // Declaring it abstract leaves the implementation details to the child class to figure out.
+        public abstract string GetFormattedSalary();
+
+        // Can be overridden, but doesn't need to be.
+        // Must have method body, even if empty.
+        // We made this method virtual because we already have all of the needed information to provide method body. we simply left it virtual in case
+        // a subclass would like to override it for some reason.
+        public virtual string GetLastNameFirstName()
+        {
+            return this.lastName + ", " + this.firstName;
         }
 
         //3 Parameter constructor

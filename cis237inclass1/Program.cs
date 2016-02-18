@@ -11,8 +11,8 @@ namespace cis237inclass3
         static void Main(string[] args)
         {
             //Create a couple of instances of the Employee class
-            Employee employee1 = new Employee("Dave", "Barnes");
-            Employee employee2 = new Employee("Joe", "Somebody");
+           // Employee employee1 = new Employee("Dave", "Barnes");
+            //Employee employee2 = new Employee("Joe", "Somebody");
 
             /*   // Make a new SalaryEmployee
              //  SalaryEmployee salaryEmployee1 = new SalaryEmployee("Tim", "Keranen", 55000m);
@@ -37,7 +37,7 @@ namespace cis237inclass3
                //Console.WriteLine(employee.ToString());//// */
 
             //Showing how to use an array with objects
-               Employee[] employees = new Employee[10];
+            IEmployee[] employees = new Employee[10];
 
 
             //Instanciate some employees into the array

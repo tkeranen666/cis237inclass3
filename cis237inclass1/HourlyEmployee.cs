@@ -36,5 +36,10 @@ namespace cis237inclass3
         {
             return base.ToString() + " " + Salary.ToString("C");
         }
+
+        public override string GetFormattedSalary()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
